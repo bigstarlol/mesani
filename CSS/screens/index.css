@@ -1,0 +1,27 @@
+.index-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-screen__artist {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.artist-picture-pic {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 700px;
+}
+
+.artist-picture h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-opcity);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--text-opcity);
+}
