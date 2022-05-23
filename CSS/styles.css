@@ -2,6 +2,8 @@
 @import "variable.css";
 
 @import "components/screen-header.css";
+@import "components/navigation.css";
+
 
 @import "screens/index.css";
 

@@ -4,24 +4,41 @@
     align-items: center;
 }
 
+.index-screen__story,
+.index-screen__music,
+.index-screen__album,
 .index-screen__artist {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
-.artist-picture-pic {
+.main-picture {
     display: flex;
     justify-content: center;
     height: 700px;
     width: 700px;
+    border-radius: 50%;
 }
 
-.artist-picture h2 {
+.index-screen h2 {
     font-size: 30px;
     font-weight: 600;
     color: var(--text-opcity);
     margin-bottom: 20px;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--text-opcity);
+}
+
+@keyframes pictur-flip {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.main-picture:hover {
+    animation: pictur-flip 3s linear infinite;
 }
